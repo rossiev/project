@@ -1,0 +1,35 @@
+.material
+ &-block
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+ &-card
+  height: 410px
+  position: relative
+  background-color: $material-bg
+  max-width: 370px
+  &__image
+   position: absolute
+   bottom: 0
+  &__text
+   margin-top: 27px
+   margin-left: 25px
+   font-size: 16px
+   line-height: 23px
+   +reg
+   &__strong
+    +bold
+@media (max-width:1200px)
+ .material
+  padding-top: 0
+  &-block
+   margin-top: 60px
+  &-card
+   &:last-child
+    margin-top: 15px
+@media (max-width:768px)
+ .material
+  &-card
+   margin-top: 30px
+  &__text
+   font-size: 12px
